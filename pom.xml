@@ -195,24 +195,6 @@
 			</excludes>
 		</configuration>
 	    </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>cobertura-maven-plugin</artifactId>
-                <version>2.5.1</version>
-                <configuration>
-                    <formats>
-                        <format>xml</format>
-                    </formats>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>cobertura</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
 	    <plugin>
   		<groupId>org.jacoco</groupId>
   		<artifactId>jacoco-maven-plugin</artifactId>
@@ -450,7 +432,7 @@
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>cobertura-maven-plugin</artifactId>
-                        <version>2.7</version>
+                        <version>${cobertura.version}</version>
                         <configuration>
                             <formats>
                                 <format>html</format>
